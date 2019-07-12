@@ -3,44 +3,88 @@ Colors to use:
 dark blue: #06365f
 light blue: #1c5380
 */
-.blue-background {
-  height: 300px;
-  width: 100%;
-  background-image: url("../images/bgtile.png");
-}
+
 body {
-  font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 0;
+  background-image: url("../images/bgtile.png");
+  background-repeat: repeat-x;
+  background-size: stretch;
 }
+
 main {
   display: flex;
   justify-content: center;
-}
-.all-content {
-  margin-top: 200px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding: 0px 30px 50px 250px;
-  max-width: 1000px;
-}
-.content-right-top {
-  display: flex;
-  flex-direction: row;
-}
-.log-button {
-  display: flex;
-  flex-direction: row;
-  height: 20px;
-  margin-top: 15px;
-  color: white;
-}
-.content-right-body {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
+  flex-wrap: wrap;
+  padding-top: 120px;
 }
 
-.download {
+.left-box {
   display: flex;
+}
+
+.right-box {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  margin-left: 40px;
+}
+
+.top-right-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.instagram img {
+  height: 100px;
+}
+
+.log-in-button {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  background-color: #1c5380;
+  padding: 10px 22px;
+  text-decoration: none;
+  font-size: 14px;
+  justify-content: space-between;
+}
+
+.log-in {
+  color: white;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  background-image: url("../images/frame.png");
+  border-radius: 10px 15px;
+  background-repeat: no-repeat;
+  padding: 20px 40px 40px 40px;
+}
+
+.text-box h2 {
+  color: #06365f;
+}
+
+.download-box {
+  display: flex;
+  padding-left: 18px;
+  justify-content: space-evenly;
+}
+
+footer {
+  padding-top: 20px;
+  color: #1c5380;
+}
+
+footer > ul {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-left: 270px;
+  margin-right: 270px;
+  font-size: 12px;
 }
